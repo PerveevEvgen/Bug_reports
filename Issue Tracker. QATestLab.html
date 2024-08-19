@@ -1,0 +1,6831 @@
+<!DOCTYPE html>
+<!-- saved from url=(0125)https://bt-w.qatestlab.com/print_all_bug_page_word.php?search=&sort=last_updated&dir=ASC&type_page=html&export=-1&show_flag=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Issue Tracker. QATestLab</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/default.css">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/status_config.php">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/dropzone-5.5.0.min.css">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/bootstrap-3.4.1.min.css">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/font-awesome-4.7.0.min.css">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/bootstrap-datetimepicker-4.17.47.min.css">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/ace.min.css">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/ace-mantis.css">
+	<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/ace-skins.min.css">
+
+	<link rel="shortcut icon" href="https://bt-w.qatestlab.com/images/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="Issue Tracker. QATestLab: full-text search" href="https://bt-w.qatestlab.com/browser_search_plugin.php?type=text">
+	<link rel="search" type="application/opensearchdescription+xml" title="Issue Tracker. QATestLab: search by Issue Id" href="https://bt-w.qatestlab.com/browser_search_plugin.php?type=id">
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/javascript_config.php"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/javascript_translations.php"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/jquery-2.2.4.min.js.Без названия"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/dropzone-5.5.0.min.js.Без названия"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/common.js.Без названия"></script>
+<meta title="plugin_userteacher_params" content="eyJjdXJyZW50X3VzZXJfaWQiOjgxNTY4LCJ0b3RhbF9jaGVja2VkX2J1Z3MiOjB9">
+<script type="text/javascript" src="./Issue Tracker. QATestLab_files/plugin_file.php"></script>
+<script type="text/javascript" src="./Issue Tracker. QATestLab_files/plugin_file(1).php"></script>
+<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/plugin_file(2).php">
+<script type="text/javascript" src="./Issue Tracker. QATestLab_files/plugin_file(3).php"></script>
+<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/plugin_file(4).php">
+<style>    .lb-nav a.lb-prev {
+        background-image: url(/plugin_file.php?file=Lightbox/img/prev.png);
+    }
+    .lb-nav a.lb-next {
+        background-image: url(/plugin_file.php?file=Lightbox/img/next.png);
+    }
+    .lb-data .lb-close {
+        background-image: url(/plugin_file.php?file=Lightbox/img/close.png);
+    }
+    .lb-cancel {
+        background-image: url(/plugin_file.php?file=Lightbox/img/loading.gif);
+    }</style><script type="text/javascript" nonce="">$(document).ready(function () {    $('.bug-attachment-preview-image a').attr('rel', 'lightbox').attr('data-lightbox', 'bug_image_preview');    $('div#bugnotes *').filter((index, element) => element.id && element.id.match(/attachment_preview_\d+_(open|closed)/)).find('a:nth-child(2)').attr('rel', 'lightbox').attr('data-lightbox', 'bug_image_link');});</script><meta title="plugin_userclient_params" content="eyJjdXJyZW50X3VzZXJfaWQiOjgxNTY4LCJwcm9qZWN0X2FkbWluaXN0cmF0b3JfaWRzIjpbXSwidG90YWxfYnVncyI6MzUsInRvdGFsX2J1Z3NfbWF4aW11bSI6NTB9">
+<meta title="plugin_userclient_menu_links" content="eyJ0ZWxsX3VzX3doYXRzX3dyb25nX3RpdGxlIjoiVGVsbCB1cyB3aGF0J3Mgd3JvbmciLCJsZWFybl90aXRsZSI6IlJlYWQgaG93IHRvIGRvIHRoZSBwcmFjdGljYWwgdGFza3MgYW5kIGhvdyB0aGV5IGFyZSBjaGVja2VkIiwibGVhcm5fbGluayI6Imh0dHBzOlwvXC9lbi50cmFpbmluZy5xYXRlc3RsYWIuY29tXC9ibG9nXC9jb3Vyc2UtbWF0ZXJpYWxzXC9saWZlLWN5Y2xlLWJ1Z1wvIiwidGVsbF91c193aGF0c193cm9uZ19pbWFnZSI6IlwvcGx1Z2luX2ZpbGUucGhwP2ZpbGU9VXNlckNsaWVudFwvaW1nXC90ZWxsX3VzX3doYXRzX3dyb25nLWVuZ2xpc2gucG5nIiwibGVhcm5faW1hZ2UiOiJcL3BsdWdpbl9maWxlLnBocD9maWxlPVVzZXJDbGllbnRcL2ltZ1wvbGVhcm4tZW5nbGlzaC5wbmcifQ==">
+<script type="text/javascript" src="./Issue Tracker. QATestLab_files/plugin_file(5).php"></script>
+<script type="text/javascript" src="./Issue Tracker. QATestLab_files/plugin_file(6).php"></script>
+<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/plugin_file(7).php">
+<script type="text/javascript" src="./Issue Tracker. QATestLab_files/plugin_file(8).php"></script>
+<script type="text/javascript" src="./Issue Tracker. QATestLab_files/plugin_file(9).php"></script>
+<link rel="stylesheet" type="text/css" href="./Issue Tracker. QATestLab_files/plugin_file(10).php">
+<script type="text/javascript" src="./Issue Tracker. QATestLab_files/plugin_file(11).php"></script>
+</head>
+<body class="skin-3">
+<style>
+* { font-family: "Open Sans"; } 
+h1, h2, h3, h4, h5 { font-family: "Open Sans"; } 
+</style>
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003206	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 18:26	</td>
+	<td>
+		2024-03-24 18:26	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The grid section(schedule) is empty at the "Персональний розклад" page after clicking the "Календар" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The grid section(schedule) is empty at the "Персональний розклад" page after clicking the "Календар" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://my.kpi.ua/" rel="noopener">https://my.kpi.ua/</a><br>
+2. Click the "Увійти" menu element.<br>
+3. Enter valid data into the required fields.<br>
+4. Click the "Тека користувач" menu element.<br>
+5. Click on the "Календар" button.<br>
+5. Pay attention to the grid section.<br>
+<br>
+Actual result: The grid section(schedule) is empty at the "Персональний розклад" page after clicking the "Календар" button..<br>
+Expected result: The schedule is displayed on the grid at the "Персональний розклад" page after clicking the "Календар" button..	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_dQdj0I9dmi.mp4 (1,496,961 bytes) <span class="italic-small">2024-03-24 18:26</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1224877&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224877&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003203	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 18:18	</td>
+	<td>
+		2024-03-24 18:18	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The "Звернення" button is disabled at the "Кабінет студента" page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The "Звернення" button is disabled at the "Кабінет студента" page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://my.kpi.ua/" rel="noopener">https://my.kpi.ua/.</a><br>
+2. Click the "Увійти" menu element.<br>
+3. Enter valid data into the required fields.<br>
+4. Click at the "Тека користувач" menu element.<br>
+5. Click at the "Кабінет студента" button.<br>
+6. Pay attention on the "Звернення" button.<br>
+<br>
+Actual result: The "Звернення" button is disabled at the "Кабінет студента" page.<br>
+<br>
+Expected result: The "Звернення" button is active at the "Кабінет студента" page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_uF6FIm5I9n.mp4 (137,090 bytes) <span class="italic-small">2024-03-24 18:18</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1224873&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224873&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003202	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 18:13	</td>
+	<td>
+		2024-03-24 18:13	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The "footer" element not displayed at the bottom of the screen on the sign in page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The "footer" element not displayed at the bottom of the screen on the sign in page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://my.kpi.ua/" rel="noopener">https://my.kpi.ua/</a><br>
+2. Click the "Увійти" menu element.<br>
+5. Pay attention to the footer.<br>
+<br>
+Actual result: The "footer" element is not displayed at the bottom of the screen on the sign in page.<br>
+<br>
+Expected result: The "footer" element is displayed at the bottom of the screen on the sign in page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_P4nrcg0CtO.png (118,405 bytes) <span class="italic-small">2024-03-24 18:13</span><br><a href="./Issue Tracker. QATestLab_files/chrome_P4nrcg0CtO.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224872&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/chrome_P4nrcg0CtO.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003200	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 18:10	</td>
+	<td>
+		2024-03-24 18:10	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The description is not displayed in the product page after clicking the "Опис моделі" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The description is not displayed in the product page after clicking the "Опис моделі" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://wintechsolutions.com.ua/" rel="noopener">https://wintechsolutions.com.ua/.</a><br>
+2. Go to the "Наша продукція" section.<br>
+3. Click on the "Автоцистерни" card.<br>
+4. Click on the "Паливозаправник Renault D 18" card.<br>
+5. Click on the "Опис моделі" button.<br>
+6. Pay attention on the area under the button.<br>
+<br>
+Actual result: The description is not displayed in the product page after clicking the "Опис моделі" button.<br>
+<br>
+Expected result: The description is  displayed in the product page after clicking the "Опис моделі" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_TQqWbVBbK2.mp4 (234,196 bytes) <span class="italic-small">2024-03-24 18:10</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1224870&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224870&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003171	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 17:13	</td>
+	<td>
+		2024-03-24 17:13	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Two items are added in the cart on clicking on the "ADD TO CART" button in the card with "Black Water Proofing Dog Boots" title.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Two items are added in the cart on clicking at the "ADD TO CART" button in the card with "Black Water Proofing Dog Boots" title.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Go to the "Bestsellers" section.<br>
+3. Click on the "ADD TO CART" button in the card with "Black Water Proofing Dog Boots" title.<br>
+4. Click on the cart icon in the site header<br>
+5. Pay attention at the number of products in the cart.<br>
+<br>
+Actual result: Two items are added in the cart on clicking on the "ADD TO CART" button in the card with "Black Water Proofing Dog Boots" title.<br>
+<br>
+Expected result: One item is added in the cart on clicking on the "ADD TO CART" button in the card with "Black Water Proofing Dog Boots" title.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_9RahUKMNeO.mp4 (2,264,704 bytes) <span class="italic-small">2024-03-24 17:13</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1224839&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224839&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003166	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 17:06	</td>
+	<td>
+		2024-03-24 17:06	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The message about the absence of the product is not displayed on the card wir ""Dog terats" title".	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The message about the absence of the product is not displayed on the card wir ""Dog terats" title".	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2.  Go to the "Bestsellers" section.<br>
+3. Click on the "ADD TO CART" button in the card with "Dog terats" title.<br>
+4. Click on the cart icon in the site header<br>
+5. Click on the "VIEW CART" button.<br>
+6. Pay attention on the error message.<br>
+<br>
+Actual result: The message about the absence of the product is not displayed on the card wir ""Dog terats" title".<br>
+<br>
+Expected result: The message about the absence of the product is displayed on the card wir ""Dog terats" title".	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+		&nbsp;The cards with "Parrot toys" and "Exclusive Marine Corals Orijina" titles have same bugs	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_fTWanJVH1M.mp4 (1,647,499 bytes) <span class="italic-small">2024-03-24 17:06</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1224835&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224835&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003147	</td>
+	<td>
+		[209-PerveevEA] Homework_3/Functional	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 16:41	</td>
+	<td>
+		2024-03-24 16:49	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The dropdown menu in the pop-up card doesn't have available options after clicking on the "ADD to CART" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The dropdown menu in the pop-up card doesn't have available options to choose after clicking on the "ADD to CART" button in the product card with "TRIXIE 39813 Traveller Capri I Pet Carrier 48 cm" title.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Go to the "Bestsellers" section.<br>
+3. Click on the "ADD to CART" button in the product card with "TRIXIE 39813 Traveller Capri I Pet Carrier 48 cm" title.<br>
+4. Pay attention on the dropdown menu in the pop-up.<br>
+<br>
+Actual result: The dropdown menu in the pop-up card doesn't have available options to choose after clicking on the "ADD to CART" button in the product card with "TRIXIE 39813 Traveller Capri I Pet Carrier 48 cm" title.<br>
+<br>
+Expected result: The dropdown menu in the pop-up card has available options to choose after clicking on the "ADD to CART" button in the product card with "TRIXIE 39813 Traveller Capri I Pet Carrier 48 cm" title.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		mo6ILachtg.png (738,859 bytes) <span class="italic-small">2024-03-24 16:41</span><br><a href="./Issue Tracker. QATestLab_files/mo6ILachtg.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224813&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/mo6ILachtg.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003155	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 16:49	</td>
+	<td>
+		2024-03-24 16:49	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The "ADD TO CART" button is superimposed on top of the pop-up card after clicking  "ADD TO CART" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The "ADD TO CART" button is superimposed on top of the pop-up card after clicking  "ADD TO CART" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Go to the "Bestsellers" section.<br>
+3. Click on the "ADD to CART" button in the product card with "Automatic Pet Feeder" title.<br>
+4. Pay attention on the pop-up card.<br>
+<br>
+Actual result: The "ADD TO CART" button is superimposed on top of the pop-up card after clicking  "ADD TO CART" button.<br>
+<br>
+Expected result: The "ADD TO CART" button is hided under the pop-up card after clicking  "ADD TO CART" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		2RtbDoWRbC.png (825,962 bytes) <span class="italic-small">2024-03-24 16:49</span><br><a href="./Issue Tracker. QATestLab_files/2RtbDoWRbC.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224822&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/2RtbDoWRbC.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003142	</td>
+	<td>
+		[209-PerveevEA] Homework_3/Functional	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 16:37	</td>
+	<td>
+		2024-03-24 16:37	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The dropdown menu in the pop-up card doesn't have available options after clicking on the "ADD to CART" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The dropdown menu in the pop-up card doesn't have available options to choose after clicking on the "ADD to CART" button in the product card with "Cat Nail Clippers" title.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Go to the "Bestsellers" section.<br>
+3. Click on the "ADD to CART" button in the product card wit "Cat Nail Clippers" title.<br>
+4. Pay attention on the dropdown menu in the pop-up.<br>
+<br>
+Actual result: The dropdown menu in the pop-up card doesn't have available options after clicking on the "ADD to CART" button.<br>
+<br>
+Expected result: The dropdown menu in the pop-up card has available options after clicking on the "ADD to CART" button.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		vCy8UVsPzG.png (491,971 bytes) <span class="italic-small">2024-03-24 16:37</span><br><a href="./Issue Tracker. QATestLab_files/vCy8UVsPzG.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224808&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/vCy8UVsPzG.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003052	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 13:02	</td>
+	<td>
+		2024-03-24 13:02	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The input fields are displayed with green border when they are empyt in the "Register" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The input fields are displayed with green border when they are empyt in the "Register" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Click on the "Sign In" button in the header.<br>
+3. Click on the "Continue" button in the "New Customer" section.<br>
+4. Pay attention on the "password" input field.<br>
+<br>
+Actual result: The input fields are displayed with green border when they are empyt in the "Register" page .<br>
+<br>
+Expected result: The error message is displayed near empty input fields  in the "Register" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		UeBwJyZTxR.png (75,054 bytes) <span class="italic-small">2024-03-24 13:02</span><br><a href="./Issue Tracker. QATestLab_files/UeBwJyZTxR.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224704&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/UeBwJyZTxR.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003050	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 12:58	</td>
+	<td>
+		2024-03-24 12:58	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The input field "Last Name" cannot be filled with letters in the "Registration" page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The input field "Last Name" cannot be filled with letters in the "Registration" page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Click on the "Sign In" button in the header.<br>
+3. Click on the "Continue" button in the "New Customer" section.<br>
+4. Pay attention on the "Last Name" input field.<br>
+<br>
+Actual result:  The input field "Last Name" cannot be filled with letters in the "Registration" page.<br>
+<br>
+Expected result: The input field "Last Name" cannot be filled with numbers in the "Registration" page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		gvACJEJVvl.png (80,522 bytes) <span class="italic-small">2024-03-24 12:58</span><br><a href="./Issue Tracker. QATestLab_files/gvACJEJVvl.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224702&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/gvACJEJVvl.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003047	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 12:53	</td>
+	<td>
+		2024-03-24 12:53	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The sign "*" is not displayed near the  "password" input field in the "Register" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The sign "*" is not displayed near the  "password" input field in the "Register" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Click on the "Sign In" button in the header.<br>
+3. Click on the "Continue" button in the "New Customer" section.<br>
+4. Pay attention on the "password" input field.<br>
+<br>
+Actual result: The sign "*" is not displayed near the  "password" input field in the "Register" page .<br>
+<br>
+Expected result: The sign "*" is displayed near the  "password" input field in the "Register" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		xa0RvQ08WO.png (79,951 bytes) <span class="italic-small">2024-03-24 12:53</span><br><a href="./Issue Tracker. QATestLab_files/xa0RvQ08WO.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224699&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/xa0RvQ08WO.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003034	</td>
+	<td>
+		[209-PerveevEA] Homework_3/Functional	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 12:24	</td>
+	<td>
+		2024-03-24 12:24	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Two ticks are displayed in the "Terms of policy" checkbox in the "step 5" section on the "Checkout page".	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Two ticks are displayed in the "Terms of policy" checkbox in the "step 5" section on the "Checkout page".	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Add some products to the shopping cart.<br>
+3. Go to the "Shopping cart" page.<br>
+4. Go to the "Checkout" page.<br>
+5. Choose "Guest Checkout" radio-button.<br>
+6. Click "Continue" button.<br>
+7. Input valid information in the input fields.<br>
+8. Pay attention on the "Terms of policy" checkbox in the "step 5" section<br>
+<br>
+Actual result: Two ticks are displayed in the "Terms of policy" checkbox on the "Checkout page".<br>
+<br>
+Expected result: One tick are displayed in the "Terms of policy" checkbox on the "Checkout page".	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		lmELia8wJa.png (70,316 bytes) <span class="italic-small">2024-03-24 12:24</span><br><a href="./Issue Tracker. QATestLab_files/lmELia8wJa.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224686&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/lmELia8wJa.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003031	</td>
+	<td>
+		[209-PerveevEA] Homework_3/Functional	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 12:18	</td>
+	<td>
+		2024-03-24 12:18	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Letters can be entered in the "Post code" input field on the "Checkout" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Letters can be entered in the "Post code" input field on the "Checkout" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Add some products to the shopping cart.<br>
+3. Go to the "Shopping cart" page.<br>
+4. Go to the "Checkout" page.<br>
+5. Choose "Guest Checkout" radio-button.<br>
+6. Click "Continue" button.<br>
+7. Input some letters into "Post code" input field.<br>
+8. Pay attention on the "Post code" input field.<br>
+<br>
+Actual result: Letters can be entered in the "Post code" input field on the "Checkout" page .<br>
+<br>
+Expected result: Only numbers can be entered in the "Post code" input field on the "Checkout" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		nqVvhNNIth.png (73,665 bytes) <span class="italic-small">2024-03-24 12:18</span><br><a href="./Issue Tracker. QATestLab_files/nqVvhNNIth.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224683&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/nqVvhNNIth.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003028	</td>
+	<td>
+		[209-PerveevEA] Homework_3/Functional	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 12:15	</td>
+	<td>
+		2024-03-24 12:15	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Letters can be entered in the "Telephone" input field on the "Checkout" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Letters can be entered in the "Telephone" input field on the "Checkout" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Add some products to the shopping cart.<br>
+3. Go to the "Shopping cart" page.<br>
+4. Go to the "Checkout" page.<br>
+5. Choose "Guest Checkout" radio-button.<br>
+6. Click "Continue" button.<br>
+7. Input some letters into "Telephone" input field.<br>
+8. Pay attention on the "Telephone" input field.<br>
+<br>
+Actual result: Letters can be entered in the "Telephone" input field on the "Checkout" page .<br>
+<br>
+Expected result: Only numbers can be entered in the "Telephone" input field on the "Checkout" page .	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		Z9dOb07LTy.png (73,927 bytes) <span class="italic-small">2024-03-24 12:15</span><br><a href="./Issue Tracker. QATestLab_files/Z9dOb07LTy.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224680&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/Z9dOb07LTy.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003021	</td>
+	<td>
+		[209-PerveevEA] Homework_5	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 11:53	</td>
+	<td>
+		2024-03-24 11:53	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The mass of goods in the cart is displayed larger than in reality	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The mass of goods in the cart is displayed larger than in reality	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Add some products to the shopping cart.<br>
+3. Go to the "Shopping cart" page.<br>
+4. Pay attention on the mass of goods in the cart.<br>
+<br>
+Actual result:  The mass of goods in the cart is displayed larger than in reality.<br>
+<br>
+Expected result: The displayed weight of the goods in the basket corresponds to the actual weight of the goods.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		XivjVfSFiM.png (114,242 bytes) <span class="italic-small">2024-03-24 11:53</span><br><a href="./Issue Tracker. QATestLab_files/XivjVfSFiM.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224673&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/XivjVfSFiM.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1003018	</td>
+	<td>
+		[209-PerveevEA] Homework_5	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-24 11:46	</td>
+	<td>
+		2024-03-24 11:46	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		high	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		assigned	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Different amounts are displayed on the "Shopping cart" page and shopping cart prewiew pop-up on clicking cart icon.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Different amounts are displayed on the "Shopping cart" page and shopping cart prewiew pop-up on clicking cart icon in the top right corner.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/.</a><br>
+2. Add some products to the shopping cart.<br>
+3. Go to the  "Shopping cart" page.<br>
+4. Click on the cart icon in the top right corner.<br>
+5. Pay attention on the shopping cart prewiew pop-up.<br>
+<br>
+Actual result: Different amounts are displayed on the "Shopping cart" page and shopping cart prewiew pop-up on clicking cart icon.<br>
+<br>
+Expected result: Same amounts are displayed on the "Shopping cart" page and shopping cart prewiew pop-up on clicking cart icon.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		2paTcOTDvM.png (146,470 bytes) <span class="italic-small">2024-03-24 11:46</span><br><a href="./Issue Tracker. QATestLab_files/2paTcOTDvM.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1224670&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/2paTcOTDvM.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1001956	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-18 22:09	</td>
+	<td>
+		2024-03-19 08:48	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Placeholder does not disappear  in the input field in the header upon input.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		When users input text into the input field, the placeholder text remains visible.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/</a> .<br>
+2. Enter a text into input field.<br>
+3. Pay attention on the input field.<br>
+<br>
+<br>
+Actual result: Placeholder does not disappear  in the input field in the header upon input.<br>
+<br>
+Expected result: Placeholder is disappear  in the input field in the header upon input.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		yURMV5d0y5.png (792,043 bytes) <span class="italic-small">2024-03-18 22:09</span><br><a href="./Issue Tracker. QATestLab_files/yURMV5d0y5.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1223385&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/yURMV5d0y5.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1001953	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-18 22:01	</td>
+	<td>
+		2024-03-19 08:47	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The price is displayed without a discount in the card with "Exo Terra Crystal Cave, Medium" title	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The price is displayed without a discount in the card with "Exo Terra Crystal Cave, Medium" title	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/</a><br>
+2. Click to the "Sale" navbar element.<br>
+3. Pay attention to the price in the card.<br>
+<br>
+Actual result: The price is displayed without a discount in the card with "Exo Terra Crystal Cave, Medium" title<br>
+<br>
+Expected result: The price is displayed with a discount in the card with "Exo Terra Crystal Cave, Medium" title	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		kgQFPwp7X5.png (516,416 bytes) <span class="italic-small">2024-03-18 22:01</span><br><a href="./Issue Tracker. QATestLab_files/kgQFPwp7X5.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1223382&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/kgQFPwp7X5.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1001952	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-18 21:57	</td>
+	<td>
+		2024-03-19 08:46	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The number of products  is displayed for empty "Compare" page near the "Compare" menu element	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The number of products (1)  is displayed for empty "Compare" page near the "Compare" menu element	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/</a><br>
+2. Click on the "Sign In" menu element.<br>
+3. Pay attention to the number near "Compare" menu element.<br>
+<br>
+Actual result: The number of products  is displayed for empty "Compare" page near the "Compare" menu element.<br>
+<br>
+Expected result: The number of products  is equal to the number of products in the "compare" page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_FcErVWhpA2.mp4 (1,301,980 bytes) <span class="italic-small">2024-03-18 21:57</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1223381&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1223381&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1001950	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		major	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-18 21:23	</td>
+	<td>
+		2024-03-19 08:46	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The "footer" element not displayed at the bottom of the screen	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The "footer" element not displayed at the bottom of the screen	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://my.kpi.ua/" rel="noopener">https://my.kpi.ua/</a><br>
+2. Click the "Увійти" menu element.<br>
+3.  Enter valid data into the required fields.<br>
+4. Click the "Тека користувач" menu element.<br>
+5. pay attention to the footer.<br>
+<br>
+Actual result: The "footer" element not displayed at the bottom of the screen<br>
+<br>
+Expected result: The "footer" element  displayed at the bottom of the screen	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		6URZt5N7Ib.png (90,959 bytes) <span class="italic-small">2024-03-18 21:23</span><br><a href="./Issue Tracker. QATestLab_files/6URZt5N7Ib.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1223379&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/6URZt5N7Ib.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1001947	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		major	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-18 21:14	</td>
+	<td>
+		2024-03-19 08:45	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The "Planet " interactive  element is extended beyond the screen in the "main" section when scrolling down	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The "Planet " interactive  element is extended beyond the screen in the "main" section when scrolling down	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://softsvit.com/" rel="noopener">https://softsvit.com/.</a><br>
+2. Go to the "Main" section.<br>
+3. Scroll down the page a bit.<br>
+4. Pay attention to the"Planet " interactive  element.<br>
+<br>
+Actual result: The "Planet " interactive  element is extended beyond the screen in the "main" section when scrolling down.<br>
+<br>
+Expected result: The planet interactive element is displayed in the center of the screen when scrolling down.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_tSO6SZKgWZ.mp4 (1,984,594 bytes) <span class="italic-small">2024-03-18 21:14</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1223376&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1223376&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1001942	</td>
+	<td>
+		[209-PerveevEA] Homework_4/Interesting bug	</td>
+	<td>
+		major	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-18 21:02	</td>
+	<td>
+		2024-03-19 08:43	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		10x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Elements are displayed with different heights in the "Benefits" section for "768x832" resolution.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Elements are displayed with different heights in the 'Benefits' section.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://dniprolab.com/uk" rel="noopener">https://dniprolab.com/uk</a><br>
+2. Set screen width to 768px.<br>
+3. Go to the "Benefits" section.<br>
+4. Pay attention to the  "Benefits" section.<br>
+<br>
+Actual result: Elements are displayed with different heights in the "Benefits" section.<br>
+<br>
+Expected result: Elements are displayed with the same heights in the"Benefits" section.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		I2k218N4L6.png (375,531 bytes) <span class="italic-small">2024-03-18 21:02</span><br><a href="./Issue Tracker. QATestLab_files/I2k218N4L6.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1223371&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/I2k218N4L6.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1000906	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-13 15:02	</td>
+	<td>
+		2024-03-14 18:41	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The image is overlaped with the "Aquariums" card title in the "Specials Deals" section for "1024x600" resolution	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The image is overlaped with the "Aquariums" card title in the "Specials Deals" section for "1024x600" resolution on the english site version	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/</a><br>
+2. Set screen width to 1024px.<br>
+3. Go to the "Specials Deals" section.<br>
+4. Pay attention to the  "Aquariums" card.<br>
+<br>
+Actual result: The image is overlaped with the "Aquariums" card title in the "Specials Deals" section.<br>
+<br>
+Expected result: The card title is located at a distance from the image	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+		The bug is also reproduced in Firefox 123.0.1 and Microsoft Edge 122.0.2365.66 browsers	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		6fWa25692p.png (515,361 bytes) <span class="italic-small">2024-03-14 18:12</span><br><a href="./Issue Tracker. QATestLab_files/6fWa25692p.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1222414&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/6fWa25692p.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0421131)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-13 19:49&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- З допустимою для тестування роздільною здатністю можна ознайомитись у статті. Необхідно замінити/відредагувати баг-репорт.<br>
+<a href="https://training.qatestlab.com/blog/technical-articles/testing-layout-basic-requirements/" rel="noopener">https://training.qatestlab.com/blog/technical-articles/testing-layout-basic-requirements/</a>			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1000866	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-13 14:03	</td>
+	<td>
+		2024-03-14 17:20	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The site theme is not matched by the blog title on the blog page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The site theme is not matched by the blog title on the blog page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/</a><br>
+2. Go to the footer section.<br>
+3. Click on the "blog" link.<br>
+4. Pay attention to the blog title on the blog page.<br>
+<br>
+Actual result: The site theme is not matched by the blog title on the blog page.<br>
+<br>
+Expected result: The site theme is matched by the blog title on the blog page.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+		The bug is also reproduced in Firefox 123.0.1 and Microsoft Edge 122.0.2365.66 browsers	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		S4axGmpWVc.png (695,418 bytes) <span class="italic-small">2024-03-14 14:58</span><br><a href="./Issue Tracker. QATestLab_files/S4axGmpWVc.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1222374&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/S4axGmpWVc.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0421130)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-13 19:48&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- На скріншоті/відео не повинна відображатися панель закладок браузера або інша зайва інформація (задній фон робочого столу, вікно програвача відео-файлів, сторонні повідомлення тощо), лише адресний рядок браузера.<br>
+<a href="https://training.qatestlab.com/blog/technical-articles/how-attachments-can-help-fix-a-bug/" rel="noopener">https://training.qatestlab.com/blog/technical-articles/how-attachments-can-help-fix-a-bug/</a>			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1000846	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-13 12:47	</td>
+	<td>
+		2024-03-14 17:19	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The twitter icon redirects to a non-existent profile in the footer in the "social media links" section after clicking	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The twitter icon redirects to a non-existent profile in the footer in the "social media links" section after clicking	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/</a><br>
+2. Go to the footer section.<br>
+3. Click on  the twitter icon in the "social media links" section<br>
+4. Pay attention on the error message<br>
+<br>
+Actual result: The twitter icon redirects to a non-existent profile in the footer in the "social media links" section after clicking<br>
+<br>
+Expected result: The twitter icon redirects to the company twitter account profile in the footer in the "social media links" section after clicking	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+		The bug is also reproduced in Firefox 123.0.1 and Microsoft Edge 122.0.2365.66 browsers	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		chrome_C2MHDlTexj.mp4 (488,003 bytes) <span class="italic-small">2024-03-13 12:47</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1221955&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1221955&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0421129)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-13 19:47&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- У темі/описі частина "Що?" розривається частиною "Де?".<br>
+<a href="https://training.qatestlab.com/blog/technical-articles/description-bug-tracker/" rel="noopener">https://training.qatestlab.com/blog/technical-articles/description-bug-tracker/</a><br>
+<br>
+- У результатах частина "Що?" розривається частиною "Де?".<br>
+<a href="https://training.qatestlab.com/blog/course-materials/description-bug-tracker/" rel="noopener">https://training.qatestlab.com/blog/course-materials/description-bug-tracker/</a>			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1000840	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		major	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-13 12:24	</td>
+	<td>
+		2024-03-14 17:19	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The card title is not matched by the image in the "special offers" section in the english site version.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The card title is not matched by the image in the "special offers" section.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/</a><br>
+2. Go to the "special offers" section.<br>
+3. Pay attention on the card with "Aquariums" title.<br>
+<br>
+Actual result: The card title is not matched by the image in the "special offers" section.<br>
+<br>
+Expected result: The card image is matched with "Aquariums" title in the "special offers" section.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+		The bug is also reproduced in Firefox 123.0.1 and Microsoft Edge 122.0.2365.66 browsers	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		ruM8KA7lcu.png (969,935 bytes) <span class="italic-small">2024-03-13 12:24</span><br><a href="./Issue Tracker. QATestLab_files/ruM8KA7lcu.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1221944&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/ruM8KA7lcu.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0421127)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-13 19:46&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- Баг з’являється лише в англійській локалізації сайта. Це слід зазначити у звіті.			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		1000916	</td>
+	<td>
+		[209-PerveevEA] Homework_2/Design	</td>
+	<td>
+		minor	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-13 15:20	</td>
+	<td>
+		2024-03-13 19:50	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 122.0.6261.96	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The "email" item  is not aligned vertically with respect to other elements of the "store info" section in the footer.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The "email" item  is not aligned vertically with respect to other elements of the "store info" section in the footer.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="http://opencart.qatestlab.net/" rel="noopener">http://opencart.qatestlab.net/</a><br>
+2. Go to the footer.<br>
+3. Pay attention to the "store info" section.<br>
+<br>
+Actual result: The "email" item  is not aligned vertically with respect to other elements of the "store info" section in the footer.<br>
+<br>
+Expected result: The "email" item is aligned relative to other elements in the "store info" section in the footer.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+		The bug is also reproduced in Firefox 123.0.1 and Microsoft Edge 122.0.2365.66 browsers	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		Gq4WGpkZsZ.png (696,086 bytes) <span class="italic-small">2024-03-13 15:20</span><br><a href="./Issue Tracker. QATestLab_files/Gq4WGpkZsZ.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1222073&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/Gq4WGpkZsZ.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		999499	</td>
+	<td>
+		[209-PerveevEA] Homework_1	</td>
+	<td>
+		text	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-05 21:50	</td>
+	<td>
+		2024-03-07 10:25	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 87.0.4280.88	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Post with "WHY DOGS NEED A GROOMER" title is displayed in uppercase style in the posts section.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Post with "WHY DOGS NEED A GROOMER" title is displayed in uppercase style in the posts section.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://trainingcentre.wixsite.com/dogblog" rel="noopener">https://trainingcentre.wixsite.com/dogblog.</a><br>
+2. Go to the posts section.<br>
+3. Take a look at the post with “WHY DOGS NEED A GROOMER” title.<br>
+<br>
+Actual result: Post with "WHY DOGS NEED A GROOMER" title is displayed in uppercase style in the posts section.<br>
+<br>
+Expected result: "Why dogs need a groomer" title is displayed in the post section.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		HVNRxn88m1.png (440,443 bytes) <span class="italic-small">2024-03-05 21:50</span><br><a href="./Issue Tracker. QATestLab_files/HVNRxn88m1.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1220038&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/HVNRxn88m1.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0419713)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:30&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- Слід дотримуватись рекомендованої кількості баг-репортів для кожного домашнього завдання.			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+<tr>
+	<td width="12%">
+				(0419714)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:30&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- У темі/описі частина "Що?" розривається частиною "Де?".<br>
+<a href="https://training.qatestlab.com/blog/technical-articles/description-bug-tracker/" rel="noopener">https://training.qatestlab.com/blog/technical-articles/description-bug-tracker/</a><br>
+<br>
+- Не варто використовувати слова наказового характеру в описі результатів або в кроках, наприклад, "must", "should", "have to", "має", "повинно".<br>
+<br>
+- EN: Назву елемента правильно писати перед його типом. Наприклад: The "Search" field.<br>
+<a href="http://training.qatestlab.com/knowledge-library/blog/bug-report-english/" rel="noopener">http://training.qatestlab.com/knowledge-library/blog/bug-report-english/</a><br>
+<br>
+- У результатах частина "Що?" розривається частиною "Де?".<br>
+<a href="https://training.qatestlab.com/blog/course-materials/description-bug-tracker/" rel="noopener">https://training.qatestlab.com/blog/course-materials/description-bug-tracker/</a>			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		999496	</td>
+	<td>
+		[209-PerveevEA] Homework_1	</td>
+	<td>
+		text	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-05 21:34	</td>
+	<td>
+		2024-03-07 10:23	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 87.0.4280.88	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The date after copyright symbol is greater than current in the footer	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		&nbsp;The date after the copyright symbol (2038) in the footer is greater than the current (2024)	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://trainingcentre.wixsite.com/dogblog" rel="noopener">https://trainingcentre.wixsite.com/dogblog.</a><br>
+2. Go to the footer section.<br>
+3. Take a look at the copyright section.<br>
+<br>
+Actual result: The date displayed after copyright symbol in the footer is greater than 2024.<br>
+<br>
+Expected result: The date displayed after the copyright symbol in the footer is less than 2025.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		BgBLGwYZ4G.png (479,954 bytes) <span class="italic-small">2024-03-05 21:34</span><br><a href="./Issue Tracker. QATestLab_files/BgBLGwYZ4G.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1220034&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/BgBLGwYZ4G.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0419716)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:30&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- Див. коментарі до інших баг-репортів.			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		999493	</td>
+	<td>
+		[209-PerveevEA] Homework_1	</td>
+	<td>
+		text	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-05 21:23	</td>
+	<td>
+		2024-03-07 10:21	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 87.0.4280.88	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Element "Contact" is displayed  in upper-case style in the navbar section	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Element "Contact" is displayed  in upper-case style in the navbar section	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://trainingcentre.wixsite.com/dogblog" rel="noopener">https://trainingcentre.wixsite.com/dogblog.</a><br>
+2. Go to the navbar section.<br>
+3. Take a look at the “Contact” navbar element.<br>
+<br>
+Actual result: The word "Contact" isn't displayed in the upper-case style.<br>
+<br>
+Expected result: The correct word "CONTACT" is displayed in the navbar.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		XFbeaQ0jnR.png (386,602 bytes) <span class="italic-small">2024-03-05 21:23</span><br><a href="./Issue Tracker. QATestLab_files/XFbeaQ0jnR.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1220030&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/XFbeaQ0jnR.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0419717)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:31&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- Див. коментарі до інших баг-репортів.			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		999489	</td>
+	<td>
+		[209-PerveevEA] Homework_1	</td>
+	<td>
+		text	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-05 21:05	</td>
+	<td>
+		2024-03-07 10:20	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 87.0.4280.88	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Spelling mistake is displayed  in the navbar section.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Spelling mistake in the navbar section, word "GALERE" is displayed in the navbar.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://trainingcentre.wixsite.com/dogblog" rel="noopener">https://trainingcentre.wixsite.com/dogblog.</a><br>
+2. Go to the navbar section.<br>
+3. Take a look at the “PHOTO GALERE” navbar element.<br>
+<br>
+Actual result: The word "GALERE" is displayed in the navbar.<br>
+<br>
+Expected result: The correct word "GALLERY"  displayed in the navbar.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		87SnwwWAiD.png (331,149 bytes) <span class="italic-small">2024-03-05 21:05</span><br><a href="./Issue Tracker. QATestLab_files/87SnwwWAiD.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1220025&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/87SnwwWAiD.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0419718)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:31&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- Див. коментарі до інших баг-репортів.			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		999509	</td>
+	<td>
+		[209-PerveevEA] Homework_1	</td>
+	<td>
+		major	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-05 22:22	</td>
+	<td>
+		2024-03-07 10:19	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 87.0.4280.88	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		normal	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		Background image is not displayed in the blog with the "The dog and it's tail" title.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		Background image is not displayed in the blog with the title "The dog and it's tail"	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://trainingcentre.wixsite.com/dogblog" rel="noopener">https://trainingcentre.wixsite.com/dogblog.</a><br>
+2. Go to the posts section.<br>
+3. Take a look at the post with title "The dog and it's tail".<br>
+<br>
+Actual result: Background image is not displayed in the blog with the "The dog and it's tail" title.<br>
+<br>
+Expected result: Background image is displayed in the blog with the "The dog and it's tail" title.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		OLBhZ0G70N.png (514,172 bytes) <span class="italic-small">2024-03-05 22:22</span><br><a href="./Issue Tracker. QATestLab_files/OLBhZ0G70N.png" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1220048&amp;type=bug</a><br><img src="./Issue Tracker. QATestLab_files/OLBhZ0G70N.png" alt="png"><br>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0419710)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:29&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- Слід дотримуватись рекомендованої кількості баг-репортів для кожного домашнього завдання.			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+<tr>
+	<td width="12%">
+				(0419711)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:29&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- EN: Назву елемента правильно писати перед його типом. Наприклад: The "Search" field.<br>
+<a href="http://training.qatestlab.com/knowledge-library/blog/bug-report-english/" rel="noopener">http://training.qatestlab.com/knowledge-library/blog/bug-report-english/</a>			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		999516	</td>
+	<td>
+		[209-PerveevEA] Homework_1	</td>
+	<td>
+		major	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-05 22:37	</td>
+	<td>
+		2024-03-07 10:15	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 87.0.4280.88	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		urgent	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The navbar element "PHOTO GALLERY" redirects to a non-existing page when pressed.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The navbar element "PHOTO GALLERY" redirects to a non-existing page when pressed.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://trainingcentre.wixsite.com/dogblog" rel="noopener">https://trainingcentre.wixsite.com/dogblog.</a><br>
+2. Go to the navbar section.<br>
+3. Click on  the “PHOTO GALERE” navbar element.<br>
+4. Pay attention on the error message<br>
+<br>
+Actual result: The navbar element "PHOTO GALLERY" redirects to a non-existing page when pressed.<br>
+<br>
+Expected result: Navbar element “PHOTO GALERE” redirects to the gallery page when pressed.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		route_bug.mp4 (100,660 bytes) <span class="italic-small">2024-03-05 22:37</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1220057&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1220057&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0419707)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:28&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- Слід дотримуватись рекомендованої кількості баг-репортів для кожного домашнього завдання.			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+<tr>
+	<td width="12%">
+				(0419708)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:28&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- У темі/описі пропущена частина "Коли?".<br>
+<br>
+- Відсутній останній крок. Необхідно описати, на яку область (блок з помилкою) звернути увагу (Наприклад: Pay attention to the ..., Звернути увагу на ...).<br>
+<a href="http://training.qatestlab.com/knowledge-library/blog/steps-bug-report/" rel="noopener">http://training.qatestlab.com/knowledge-library/blog/steps-bug-report/</a> <br>
+<br>
+- EN: В темі, описі та результатах слід використовувати пасив (Present Simple Passive Voice: дієслово to be в теперішньому часі (is, are) + Past Participle (дієслово у третій формі), наприклад: "is displayed", "is shown").<br>
+<a href="http://training.qatestlab.com/knowledge-library/blog/passive-voice-bugs/" rel="noopener">http://training.qatestlab.com/knowledge-library/blog/passive-voice-bugs/</a><br>
+<br>
+- В результатах пропущено частину "Коли?".			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+<br style="mso-special-character: line-break; page-break-before: always"><table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="6">
+		View Issue Details	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr class="bold">
+	<td width="16%">
+		ID:	</td>
+	<td width="16%">
+		Category:	</td>
+	<td width="16%">
+		Severity:	</td>
+	<td width="16%">
+		Reproducibility:	</td>
+	<td width="16%">
+		Date Submitted:	</td>
+	<td width="16%">
+		Last Update:	</td>
+</tr>
+<tr>
+	<td>
+		999504	</td>
+	<td>
+		[209-PerveevEA] Homework_1	</td>
+	<td>
+		major	</td>
+	<td>
+		always	</td>
+	<td>
+		2024-03-05 22:10	</td>
+	<td>
+		2024-03-07 10:11	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Reporter:	</td>
+	<td>
+		<span>209-PerveevEA</span>	</td>
+	<td class="bold">
+		Platform:	</td>
+	<td>
+		Google Chrome 87.0.4280.88	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Assigned To:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		OS:	</td>
+	<td>
+		Windows 10	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Priority:	</td>
+	<td>
+		high	</td>
+	<td class="bold">
+		OS Version:	</td>
+	<td>
+		x64	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Status:	</td>
+	<td>
+		accepted	</td>
+	<td class="bold">
+		Product Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Product Build:	</td>
+	<td>
+			</td>
+	<td class="bold">
+		Resolution:	</td>
+	<td>
+		open	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		Projection:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr>
+	<td class="bold">
+		ETA:	</td>
+	<td>
+		none	</td>
+	<td class="bold">
+		Fixed in Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+
+</tr>
+<tr>
+	<td class="bold">
+		&nbsp;
+	</td>
+	<td>
+		&nbsp;
+	</td>
+	<td class="bold">
+		Target Version:	</td>
+	<td>
+			</td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+<tr>
+	<td class="bold">
+		Summary:	</td>
+	<td colspan="5">
+		The "Up" button does not scroll the page to the header when pressed.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Description:	</td>
+	<td colspan="5">
+		The "Up" button doesn't scroll the page to the header	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Steps To Reproduce:	</td>
+	<td colspan="5">
+		1. Open the site <a href="https://trainingcentre.wixsite.com/dogblog" rel="noopener">https://trainingcentre.wixsite.com/dogblog.</a><br>
+2. Go to the end of posts section.<br>
+3. Click on the "Up" botton several times <br>
+4. Pay attention to the absence of page scrolling<br>
+<br>
+Actual result:  The "Up" button does not scroll the page to the header when pressed.<br>
+<br>
+Expected result:  The "Up" button scroll the page to the header when pressed.	</td>
+</tr>
+<tr>
+	<td class="bold">
+		Additional Information:	</td>
+	<td colspan="5">
+			</td>
+</tr>
+<tr>
+	<td class="bold">
+		Attached Files:	</td>
+	<td colspan="5">
+		bug.mp4 (458,411 bytes) <span class="italic-small">2024-03-05 22:10</span><br><a href="https://bt-w.qatestlab.com/file_download.php?file_id=1220043&amp;type=bug" rel="noopener">https://bt-w.qatestlab.com/file_download.php?file_id=1220043&amp;type=bug</a>	</td>
+</tr>
+
+<tr class="spacer"><td colspan="6"></td></tr>
+</tbody></table>
+
+
+<table class="table table-striped table-bordered table-condensed no-margin small">
+<tbody><tr>
+	<td class="bold" colspan="2">
+			Notes	</td>
+</tr>
+	<tr>
+	<td width="12%">
+				(0419705)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:27&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- Слід дотримуватись рекомендованої кількості баг-репортів для кожного домашнього завдання.			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+<tr>
+	<td width="12%">
+				(0419706)
+			<br>
+				<span>natalia.kholodenko</span>&nbsp;&nbsp;&nbsp;
+			<br>
+				2024-03-06 13:27&nbsp;&nbsp;&nbsp;
+							</td>
+	<td>
+- У темі/описі пропущена частина "Коли?".<br>
+<br>
+- Відсутній останній крок. Необхідно описати, на яку область (блок з помилкою) звернути увагу (Наприклад: Pay attention to the ..., Звернути увагу на ...).<br>
+<a href="http://training.qatestlab.com/knowledge-library/blog/steps-bug-report/" rel="noopener">http://training.qatestlab.com/knowledge-library/blog/steps-bug-report/</a> <br>
+<br>
+- Результати необхідно описувати згідно теми за принципом "Що? Де? Коли?", відповідаючи по порядку на ці питання.<br>
+<a href="http://training.qatestlab.com/knowledge-library/blog/results-bug-report/" rel="noopener">http://training.qatestlab.com/knowledge-library/blog/results-bug-report/</a>			</td>
+		</tr>
+		<tr class="spacer"><td colspan="2"></td></tr>
+</tbody></table>
+
+
+
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/bootstrap-3.4.1.min.js.Без названия"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/moment-with-locales-2.29.4.min.js.Без названия"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/bootstrap-datetimepicker-4.17.47.min.js.Без названия"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/typeahead.jquery-1.3.0.min.js.Без названия"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/list-1.5.0.min.js.Без названия"></script>
+	<script type="text/javascript" src="./Issue Tracker. QATestLab_files/ace.min.js.Без названия"></script>
+
+    <div id="tell_us_whats_wrong" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tell_us_whats_wrong">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title">Tell us what's wrong</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="uc_tell_us_what_wrong_form" method="post" action="https://bt-w.qatestlab.com/plugin.php?page=UserClient/uc_tell_us_what_wrong_send.php">
+                        <input type="hidden" name="uc_tell_us_what_wrong_send_token" value="20240325lLr2PbPs8kGWPHPywYhHK2Yr6Ja0K6Jm">                        <div class="form-group">
+                            <label for="uc_tell_us_whats_wrong_message" class="control-label">Message<span class="required">*</span></label>
+                            <textarea id="uc_tell_us_whats_wrong_message" name="message" class="form-control" rows="5" required=""></textarea>
+                        </div>
+                    </form>
+                    <div class="response alert alert-sm alert-danger" style="display: none;">
+                        <i class="ace-icon fa fa-times fa-lg"></i>
+                        <span class="message"></span>
+                    </div>
+                    <div class="response alert alert-sm alert-success" style="display: none;">
+                        <i class="ace-icon fa fa-check fa-lg"></i>
+                        <span class="message"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-round btn-white" data-dismiss="modal">Close</button>
+                    <button form="uc_tell_us_what_wrong_form" type="submit" class="btn btn-primary btn-round btn-white">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image" href="https://bt-w.qatestlab.com/print_all_bug_page_word.php?search=&amp;sort=last_updated&amp;dir=ASC&amp;type_page=html&amp;export=-1&amp;show_flag=0"></a><a class="lb-next" role="button" tabindex="0" aria-label="Next image" href="https://bt-w.qatestlab.com/print_all_bug_page_word.php?search=&amp;sort=last_updated&amp;dir=ASC&amp;type_page=html&amp;export=-1&amp;show_flag=0"></a></div><div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div></div></div></div></body></html>
